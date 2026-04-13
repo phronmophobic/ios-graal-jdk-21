@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A5E54A92F8C32A90018BC92 /* JdkConsoleImpl_md.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */; };
 		5A11334C2615EDA000E59D56 /* MacOSXSocketOptions.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11C4062615ED7100E59D56 /* MacOSXSocketOptions.c */; settings = {COMPILER_FLAGS = "-DLIBRARY_NAME=extnet"; }; };
 		5A11507E2615EDDB00E59D56 /* net_util_md.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11F43E2615ED8300E59D56 /* net_util_md.c */; };
 		5A11507F2615EDDB00E59D56 /* Inet4AddressImpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11F43F2615ED8300E59D56 /* Inet4AddressImpl.c */; };
@@ -135,6 +136,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JdkConsoleImpl_md.c; sourceTree = "<group>"; };
 		5A117D9326161FA900E59D56 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5A117D9626161FD900E59D56 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5A117D9A261620B200E59D56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -471,6 +473,7 @@
 				5A11F4542615ED8300E59D56 /* ProcessEnvironment_md.c */,
 				5A11F4552615ED8300E59D56 /* java_props_md.c */,
 				5A11F4562615ED8300E59D56 /* gdefs_md.h */,
+				3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */,
 				5A11F4582615ED8300E59D56 /* ProcessHandleImpl_unix.c */,
 				5A11F4592615ED8300E59D56 /* ProcessImpl_md.c */,
 				5A11F45A2615ED8300E59D56 /* jni_util_md.c */,
@@ -866,6 +869,7 @@
 				5A1150802615EDDB00E59D56 /* ResolverConfigurationImpl.c in Sources */,
 				5A1152232615EDE000E59D56 /* Reflection.c in Sources */,
 				5A1152252615EDE000E59D56 /* jni_util.c in Sources */,
+				3A5E54A92F8C32A90018BC92 /* JdkConsoleImpl_md.c in Sources */,
 				F036E6AD2BC68E2900A78829 /* LambdaProxyClassArchive.c in Sources */,
 				5A11521B2615EDE000E59D56 /* Module.c in Sources */,
 				F036E6932BC68DB800A78829 /* UnixDomainSockets.c in Sources */,
