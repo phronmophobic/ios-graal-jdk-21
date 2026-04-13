@@ -1,0 +1,7 @@
+# *.tar.gz
+labs-openjdk/build
+labs-openjdk/svm.openjdk.xcodeproj/project.xcworkspace/xcuserdata/
+svm/svm.graal.xcodeproj/project.xcworkspace/xcuserdata/
+svm/svm.graal.xcodeproj/xcshareddata/
+svm/svm.graal.xcodeproj/xcuserdata/adrian.xcuserdatad/
+svm/build
