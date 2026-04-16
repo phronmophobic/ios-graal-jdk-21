@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3A5E54A92F8C32A90018BC92 /* JdkConsoleImpl_md.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */; };
+		3A9C43F32F9033B2004700E3 /* OperatingSystemImpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C43F12F9033B2004700E3 /* OperatingSystemImpl.c */; };
+		3AE387FB2F90198300611B66 /* Unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AE387F92F90198300611B66 /* Unix.c */; settings = {COMPILER_FLAGS = "-DLIBRARY_NAME=jaas"; }; };
 		5A11334C2615EDA000E59D56 /* MacOSXSocketOptions.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11C4062615ED7100E59D56 /* MacOSXSocketOptions.c */; settings = {COMPILER_FLAGS = "-DLIBRARY_NAME=extnet"; }; };
 		5A11507E2615EDDB00E59D56 /* net_util_md.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11F43E2615ED8300E59D56 /* net_util_md.c */; };
 		5A11507F2615EDDB00E59D56 /* Inet4AddressImpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11F43F2615ED8300E59D56 /* Inet4AddressImpl.c */; };
@@ -137,6 +139,8 @@
 
 /* Begin PBXFileReference section */
 		3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JdkConsoleImpl_md.c; sourceTree = "<group>"; };
+		3A9C43F12F9033B2004700E3 /* OperatingSystemImpl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OperatingSystemImpl.c; sourceTree = "<group>"; };
+		3AE387F92F90198300611B66 /* Unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Unix.c; sourceTree = "<group>"; };
 		5A117D9326161FA900E59D56 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5A117D9626161FD900E59D56 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5A117D9A261620B200E59D56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -300,6 +304,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A9C43F22F9033B2004700E3 /* libmanagement_ext */ = {
+			isa = PBXGroup;
+			children = (
+				3A9C43F12F9033B2004700E3 /* OperatingSystemImpl.c */,
+			);
+			name = libmanagement_ext;
+			path = jdk.management/unix/native/libmanagement_ext;
+			sourceTree = "<group>";
+		};
+		3AE387FA2F90198300611B66 /* libjaas */ = {
+			isa = PBXGroup;
+			children = (
+				3AE387F92F90198300611B66 /* Unix.c */,
+			);
+			name = libjaas;
+			path = jdk.security.auth/unix/native/libjaas;
+			sourceTree = "<group>";
+		};
 		5A117D9226161FA900E59D56 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -315,6 +337,8 @@
 		5A11BD602615ED7000E59D56 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				3A9C43F22F9033B2004700E3 /* libmanagement_ext */,
+				3AE387FA2F90198300611B66 /* libjaas */,
 				F036E6EC2BC68E9F00A78829 /* java.prefs */,
 				5A11C4022615ED7100E59D56 /* jdk.net */,
 				5A11D3D82615ED7800E59D56 /* hotspot */,
@@ -882,6 +906,7 @@
 				5A11520D2615EDE000E59D56 /* Throwable.c in Sources */,
 				F036E6B82BC68E4700A78829 /* NativeSocketAddress.c in Sources */,
 				5A1152222615EDE000E59D56 /* jio.c in Sources */,
+				3AE387FB2F90198300611B66 /* Unix.c in Sources */,
 				5A11521A2615EDE000E59D56 /* AccessController.c in Sources */,
 				5A11507E2615EDDB00E59D56 /* net_util_md.c in Sources */,
 				F036E6A92BC68E2900A78829 /* ContinuationSupport.c in Sources */,
@@ -908,6 +933,7 @@
 				F036E6B52BC68E2900A78829 /* ForeignLinkerSupport.c in Sources */,
 				5A1152302615EDE100E59D56 /* io_util.c in Sources */,
 				5A1152352615EDE100E59D56 /* RandomAccessFile.c in Sources */,
+				3A9C43F32F9033B2004700E3 /* OperatingSystemImpl.c in Sources */,
 				5A1150A72615EDDB00E59D56 /* IOUtil.c in Sources */,
 				5A1152492615EDE100E59D56 /* CRC32.c in Sources */,
 				F036E6952BC68DC000A78829 /* UnixFileSystem.c in Sources */,
@@ -1132,6 +1158,9 @@
 					"$(JDK_ROOT)/build/labsjdk/jdk/include",
 					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.crypto.ec",
 					"$(JDK_ROOT)/build/labsjdk/support/headers/java.prefs",
+					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.security.auth",
+					"$(JDK_ROOT)/src/jdk.management/share/native/libmanagement_ext",
+					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.management",
 				);
 				"HEADER_SEARCH_PATHS[arch=*]" = (
 					"$(JDK_ROOT)/src/java.base/share/native/libjava",
@@ -1140,6 +1169,9 @@
 					"$(JDK_ROOT)/build/labsjdk/jdk/include",
 					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.crypto.ec",
 					"$(JDK_ROOT)/build/labsjdk/support/headers/java.prefs",
+					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.security.auth",
+					"$(JDK_ROOT)/src/jdk.management/share/native/libmanagement_ext",
+					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.management",
 				);
 				JDK_ROOT = "$(SRCROOT)/labs-openjdk-21";
 				LIBRARY_SEARCH_PATHS = (
@@ -1238,6 +1270,9 @@
 					"$(JDK_ROOT)/build/labsjdk/jdk/include",
 					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.crypto.ec",
 					"$(JDK_ROOT)/build/labsjdk/support/headers/java.prefs",
+					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.security.auth",
+					"$(JDK_ROOT)/src/jdk.management/share/native/libmanagement_ext",
+					"$(JDK_ROOT)/build/labsjdk/support/headers/jdk.management",
 				);
 				JDK_ROOT = "$(SRCROOT)/labs-openjdk-21";
 				LIBRARY_SEARCH_PATHS = (
