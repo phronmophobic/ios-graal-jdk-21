@@ -10,7 +10,6 @@
 		3A5E54A92F8C32A90018BC92 /* JdkConsoleImpl_md.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */; };
 		3A9C43F32F9033B2004700E3 /* OperatingSystemImpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 3A9C43F12F9033B2004700E3 /* OperatingSystemImpl.c */; };
 		3AE387FB2F90198300611B66 /* Unix.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AE387F92F90198300611B66 /* Unix.c */; settings = {COMPILER_FLAGS = "-DLIBRARY_NAME=jaas"; }; };
-		3AFA8D9A2F919C59003FEE4E /* management_ext.c in Sources */ = {isa = PBXBuildFile; fileRef = 3AFA8D992F919C59003FEE4E /* management_ext.c */; };
 		5A11334C2615EDA000E59D56 /* MacOSXSocketOptions.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11C4062615ED7100E59D56 /* MacOSXSocketOptions.c */; settings = {COMPILER_FLAGS = "-DLIBRARY_NAME=extnet"; }; };
 		5A11507E2615EDDB00E59D56 /* net_util_md.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11F43E2615ED8300E59D56 /* net_util_md.c */; };
 		5A11507F2615EDDB00E59D56 /* Inet4AddressImpl.c in Sources */ = {isa = PBXBuildFile; fileRef = 5A11F43F2615ED8300E59D56 /* Inet4AddressImpl.c */; };
@@ -142,7 +141,6 @@
 		3A5E54A82F8C32A90018BC92 /* JdkConsoleImpl_md.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = JdkConsoleImpl_md.c; sourceTree = "<group>"; };
 		3A9C43F12F9033B2004700E3 /* OperatingSystemImpl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = OperatingSystemImpl.c; sourceTree = "<group>"; };
 		3AE387F92F90198300611B66 /* Unix.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Unix.c; sourceTree = "<group>"; };
-		3AFA8D992F919C59003FEE4E /* management_ext.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = management_ext.c; path = "labs-openjdk-21/src/jdk.management/share/native/libmanagement_ext/management_ext.c"; sourceTree = SOURCE_ROOT; };
 		5A117D9326161FA900E59D56 /* CoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreServices.framework; path = System/Library/Frameworks/CoreServices.framework; sourceTree = SDKROOT; };
 		5A117D9626161FD900E59D56 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		5A117D9A261620B200E59D56 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -309,7 +307,6 @@
 		3A9C43F22F9033B2004700E3 /* libmanagement_ext */ = {
 			isa = PBXGroup;
 			children = (
-				3AFA8D992F919C59003FEE4E /* management_ext.c */,
 				3A9C43F12F9033B2004700E3 /* OperatingSystemImpl.c */,
 			);
 			name = libmanagement_ext;
@@ -974,7 +971,6 @@
 				F036E68D2BC68DAA00A78829 /* MappedMemoryUtils.c in Sources */,
 				F036E6AF2BC68E2900A78829 /* PhantomReference.c in Sources */,
 				5A1150A62615EDDB00E59D56 /* Net.c in Sources */,
-				3AFA8D9A2F919C59003FEE4E /* management_ext.c in Sources */,
 				F036E6972BC68DDE00A78829 /* FileDispatcherImpl.c in Sources */,
 				F036E6F02BC68E9F00A78829 /* MacOSXPreferencesFile.m in Sources */,
 				F036E6B12BC68E2900A78829 /* CDS.c in Sources */,
