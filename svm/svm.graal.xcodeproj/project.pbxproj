@@ -296,6 +296,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SVM_ROOT = "$(SRCROOT)/..";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -311,6 +312,7 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SVM_ROOT = "$(SRCROOT)/..";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
